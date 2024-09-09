@@ -26,7 +26,7 @@ docker-compose --version
 
 request some faucet from the [Allora Testnet Faucet](https://faucet.testnet-1.testnet.allora.network/) 
 
-## Stop the old version
+## Install chain
 If you've previously run the old version and want to stop it before proceeding, follow these commands
 ```
 cd $HOME && rm -rf allora-chain

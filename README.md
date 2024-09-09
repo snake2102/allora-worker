@@ -29,9 +29,13 @@ request some faucet from the [Allora Testnet Faucet](https://faucet.testnet-1.te
 ## Stop the old version
 If you've previously run the old version and want to stop it before proceeding, follow these commands
 ```
-docker stop custom-inference
-docker stop custom-worker
-docker container prune -f
+cd $HOME && rm -rf allora-chain
+
+git clone https://github.com/allora-network/allora-chain.git
+
+cd allora-chain && make all
+
+allorad version
 ```
 
 ## Run the custom model

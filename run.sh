@@ -1,6 +1,6 @@
 #!/bin/bash
 
-rpc="https://allora-rpc.testnet.allora.network"
+rpc="https://allora-testnet-rpc.itrocket.net"
 
 read -p "Enter your worker index: " index
 read -p "Enter your mnemonic phrase: " mnemonic_phrase

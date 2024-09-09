@@ -100,14 +100,16 @@ cat <<EOF > config.json
         "submitTx": true
     },
     "worker": [
-{
-    "topicId": 10,
-    "inferenceEntrypointName": "api-worker-reputer",
-    "loopSeconds": 5,
-    "parameters": {
-        "InferenceEndpoint": "http://custom-inference:8000/inference/{Token}",
-        "Token": "MEME"
-    }
+        {
+            "topicId": 10,
+            "inferenceEntrypointName": "api-worker-reputer",
+            "loopSeconds": 5,
+            "parameters": {
+                "InferenceEndpoint": "http://custom-inference:8000/inference/{Token}",
+                "Token": "MEME"
+            }
+        }
+    ]
 }
 EOF
 

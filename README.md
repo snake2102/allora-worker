@@ -68,7 +68,7 @@ curl http://localhost:8001/inference/MEME
 
 ## [DEPRECATED] Run with hugging model and pass your mnemonic phrase to it
 ```
-curl -LOs https://raw.githubusercontent.com/sarox0987/allora-worker/main/hugging-allora.sh && bash ./hugging-allora.sh
+curl -LOs https://raw.githubusercontent.com/snake2102/allora-worker/main/hugging-allora.sh && bash ./hugging-allora.sh
 ```
 
 make sure both `hugging-worker` & `hugging-inference` containers are running with `docker ps`

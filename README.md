@@ -26,16 +26,6 @@ docker-compose --version
 
 request some faucet from the [Allora Testnet Faucet](https://faucet.testnet-1.testnet.allora.network/) 
 
-## Stop the old version
-If you've previously run the old version and want to stop it before proceeding, follow these commands
-```
-cd ~
-rm -r ~/allora-worker/
-docker stop custom-inference custom-worker custom-worker-0 custom-worker-1
-docker container prune -f
-docker rmi custom-inference
-```
-
 ## Run the custom model
 1. Create an account and obtain an Upshot ApiKey [here](https://developer.upshot.xyz)
 

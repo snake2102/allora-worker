@@ -28,7 +28,7 @@ services:
 
   custom-worker-$index:
     container_name: custom-worker-$index
-    image: alloranetwork/allora-offchain-node:latest
+    image: alloranetwork/allora-offchain-node:v0.5.0
     volumes:
       - ./worker-data-$index:/data
     depends_on:

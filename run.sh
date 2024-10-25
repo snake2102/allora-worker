@@ -96,8 +96,9 @@ cat <<EOF > config.json
         "gas": "1000000",
         "gasAdjustment": 1.0,
         "nodeRpc": "$rpc",
-        "maxRetries": 1,
-        "delay": 1,
+        "maxRetries": 5,
+        "retryDelay": 3,
+        "accountSequenceRetryDelay": 5,
         "submitTx": true
     },
     "worker": [

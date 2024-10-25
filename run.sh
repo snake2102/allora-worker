@@ -79,7 +79,7 @@ if [ "\$ENV_LOADED" = "false" ]; then
     json_content=\$(cat ./config.json)
     stringified_json=\$(echo "\$json_content" | jq -c .)
     
-    docker run -it --entrypoint=bash -v \$(pwd)/worker-data-$index:/data -v \$(pwd)/scripts:/scripts -e NAME=\${nodeName}" -e ALLORA_OFFCHAIN_NODE_CONFIG_JSON="\${stringified_json}" alloranetwork/allora-chain:latest -c "bash /scripts/init.sh"
+    docker run -it --entrypoint=bash -v \$(pwd)/worker-data-$index:/data -v \$(pwd)/scripts:/scripts -e NAME=\${nodeName}" -e ALLORA_OFFCHAIN_NODE_CONFIG_JSON="\${stringified_json}" alloranetwork/allora-chain:v0.6.0 -c "bash /scripts/init.sh"
     echo "config.json saved to ./worker-data-$index/env_file"
 else
     echo "config.json is already loaded, skipping the operation. You can set ENV_LOADED variable to false in ./worker-data-$index/env_file to reload the config.json"

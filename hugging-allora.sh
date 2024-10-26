@@ -25,7 +25,7 @@ services:
 
   hugging-worker:
     container_name: hugging-worker
-    image: alloranetwork/allora-offchain-node:latest
+    image: alloranetwork/allora-offchain-node:v0.5.0
     volumes:
       - ./worker-data:/data
     depends_on:
